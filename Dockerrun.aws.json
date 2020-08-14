@@ -5,7 +5,8 @@
             "name":"client",
             "image" : "erickc80/multi-client",
             "hostname": "client",
-            "essential" : false
+            "essential" : false,
+            "memory" : 128
             
         },
         {
@@ -13,13 +14,15 @@
             "name":"server",
             "image" : "erickc80/multi-server",
             "hostname": "api",
-            "essential" : false 
+            "essential" : false ,
+            "memory" : 128
         },
         {
             "name":"worker",
             "image" : "erickc80/multi-worker",
             "hostname": "worker",
-            "essential" : false
+            "essential" : false ,
+            "memory" : 128
         },
         {
             "name":"nginx",
@@ -34,7 +37,8 @@
             ],
             "links" :[
                "client", "servers" 
-            ]   
+            ],
+            "memory" : 128   
         }    
     ]
 }
