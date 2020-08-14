@@ -11,11 +11,11 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <header className="App-header">
+     
         
        <Link to="/">Home </Link>
        <Link to ="/otherpage">OtherPage</Link>
-      </header>
+      
     </div>
      <div>
        <Route exact path="/" component={Fib}/>
